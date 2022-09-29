@@ -1,0 +1,20 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+
+        maven{
+            allowInsecureProtocol=true
+            url 'http://repoandroid:8081/repository/maven-public'
+            credentials{
+                username 'android'
+                password '123456'
+            }
+        }
+
+        // google()
+        //mavenCentral()
+       // jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+rootProject.name = "Dice Simulate 2F"
+include ':app'
